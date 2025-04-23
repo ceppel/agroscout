@@ -1,0 +1,149 @@
+.etap{
+    .__box{
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        .__left{
+            display: flex;
+            flex-direction: row;
+            gap: 350px;
+            .__card{
+                background-color: #1e1d1d;
+                box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.08);
+                padding: 30px 55px 58px 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+                p{
+                    margin-top: -8px;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 173%;
+                    color: #fff;
+                }
+            }
+        }
+        .__right{
+            display: flex;
+            flex-direction: row;
+            gap: 350px;
+            .__card{
+                background-color: #1e1d1d;
+                box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.08);
+                max-width: 320px;
+                padding: 30px 55px 58px 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+            }
+            p{
+                margin-top: -8px;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 173%;
+                color: #fff;
+            }
+        }
+        .card--first{
+            position: relative;
+            ::before{
+                content: "";
+                position: absolute;
+                bottom: -90px;
+                right: -50px;
+                width: 128px;
+                height: 144px;
+                background-image: url(/img/Arrow1.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                bottom: -228px;
+                right: 42px;
+                width: 200px;
+                height: 113px;
+                background-image: url(/img/research.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+        }
+        .card--third{
+            margin-left: 310px;
+            position: relative;
+            ::before{
+                content:'';
+                position: absolute;
+                top: -113px;
+                right: -59px;
+                width: 128px;
+                height: 144px;
+                background-image: url(/img/arrow2.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                top: -245px;
+                right: 32px;
+                width: 252px;
+                height: 184px;
+                background-image: url(/img/etno.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+        }
+        .card--second{
+            position: relative;
+            ::before{
+                content: "";
+                position: absolute;
+                bottom: -90px;
+                right: -50px;
+                width: 128px;
+                height: 144px;
+                background-image: url(/img/Arrow1.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                bottom: -221px;
+                right: 25px;
+                width: 246px;
+                height: 114px;
+                background-image: url(/img/anto.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+        }
+        .card--fourth{
+            position: relative;
+            ::before{
+                content: "";
+                position: absolute;
+                top: -421px;
+                left: -1202px;
+                width: 1600px;
+                height: 840px;
+                background-image: url(/img/Parala.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                top: -245px;
+                right: -53px;
+                width: 347px;
+                height: 173px;
+                background-image: url(/img/bpla.svg);
+                background-repeat: no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+}

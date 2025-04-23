@@ -1,0 +1,72 @@
+/* Начало седьмой секции*/
+.command {
+    .__header {
+      h1 {
+        margin-top: -110px;
+      }
+    }
+    .__cards {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      .__card {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 156px;
+          left: -25px;
+          width: 116px;
+          height: 116px;
+          background-image: url(/img/corner1.svg);
+          background-size: cover;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: -22px;
+          right: 25px;
+          width: 116px;
+          height: 116px;
+          background-image: url(/img/corner2.svg);
+          background-size: cover;
+        }
+        img {
+          padding-bottom: 70px;
+        }
+        h6 {
+          padding-bottom: 30px;
+        }
+        p {
+          padding-bottom: 30px;
+        }
+        a{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 100%;
+            color: var(--green);
+            position: relative;
+            &::after{
+                content:'';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 88px;
+                height: 1px;
+                background-image:url(/img/Line2.svg);
+            }
+        }
+        &:last-child {
+          &::before {
+            top: 156px; // коррекция для последней карточки
+            left: -20px;
+          }
+          &::after {
+            top: -18px; // коррекция для последней карточки
+            right: -4px;
+          }
+        }
+      }
+    }
+  }
+/* Конец седьмой секции*/

@@ -1,0 +1,32 @@
+/* Начало третьей секции*/
+.services{
+    .__box{
+        background-image:url(/img/Services.jpg);
+        background-size:cover;
+        background-position: top center;
+        .__header{
+            padding: 153px 0;
+            h2{
+                padding-bottom: 50px;
+            }
+            h4{
+                font-weight: 300;
+                padding-bottom: 70px;
+            }
+            .__btns{
+                .__btn{
+                    a{  
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 100%;
+                        padding: 17px 59px;
+                        border: 1px solid var(--green);
+                        color: var(--green);
+                        background-color: #1E1D1D;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Конец третьей секции*/

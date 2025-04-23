@@ -1,0 +1,55 @@
+/* Начало пятой секции*/
+.work{
+    .__header{
+        z-index: 1000;
+    }
+    .__box{
+        
+        .__text{
+            display: flex;
+            flex-direction: column;
+            gap: 75px;
+            h6{
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 162%;
+            }
+        }
+    }
+}
+
+.work {
+    color: var(--white);
+    .work__row {
+        display: flex;
+        flex-direction: row;
+        gap: 110px;
+    }
+    
+    .work__card-left {
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 79px;
+            height: 450px;
+            top: 14px;
+            left: -122px;
+            z-index: 99;
+            background-image: url(/img/map.svg);
+        }
+    }
+    
+    .work__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+    }
+    
+    .work__item {
+        font-size: 24px;
+        line-height: 39px;
+    }
+}
+/* Конец пятой секции*/

@@ -1,0 +1,55 @@
+/* Начало второй секции*/
+.offer{
+    .__cards{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        position: relative;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 87px;
+            height: 408px;
+            top: 84px;
+            left: -124px;
+            z-index: 99;
+            background-image: url(/img/top.svg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 714px;
+            height: 539px;
+            top: -30px;
+            right: -140px;
+            z-index: 99;
+            background-image: url(/img/iconLine.svg);
+        }
+        .__card{
+            max-width: 413px;
+            background-color: #1E1D1D;
+            padding: 14px 25px 65px 25px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .__btns{
+                padding-top: 30px;
+                .__btn{
+                    a{  
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 100%;
+                        padding: 17px 59px;
+                        border: 1px solid var(--green);
+                        color: var(--green);
+                        background-color: #1E1D1D;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Конец второй секции*/

@@ -1,0 +1,76 @@
+/*Начало деcятой секции*/
+.problem{
+    .__cards{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -74px;
+            left: -308px;
+            width: 602px;
+            height: 118px;
+            background-image:url(/img/iconDrone_flying.svg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 714px;
+            height: 583px;
+            top: -278px;
+            right: -99px;
+            background-image: url(/img/iconLine.svg);
+        }
+        .__left{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .__card{
+                display: flex;
+                flex-direction: row; /* Измените направление на колонку */
+                align-items: flex-start; /* Выравнивание содержимого по верхнему краю */
+                z-index: 1000; /* Убедитесь, что карточки находятся перед фоном */
+                max-width: 370px;
+                gap: 20px;
+                h6{
+                    line-height: 167%;
+                }
+            }
+        }
+        .__center{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .__card{
+                display: flex;
+                flex-direction: row; /* Измените направление на колонку */
+                align-items: flex-start; /* Выравнивание содержимого по верхнему краю */
+                z-index: 1000; /* Убедитесь, что карточки находятся перед фоном */
+                max-width: 370px;
+                gap: 20px;
+                h6{
+                    line-height: 167%;
+                }
+            }
+        }
+        .__right{
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            .__card{
+                display: flex;
+                flex-direction: row; /* Измените направление на колонку */
+                align-items: flex-start; /* Выравнивание содержимого по верхнему краю */
+                z-index: 1000; /* Убедитесь, что карточки находятся перед фоном */
+                max-width: 370px;
+                gap: 20px;
+                h6{
+                    line-height: 167%;
+                }
+            }
+        }
+    }
+}
+/* Конец деcятой секции*/

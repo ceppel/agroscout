@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etnomofagi</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<!-- Header content -->
+			@@include('blocks/etnomofagi__content.html')
+			@@include('blocks/mobile-nav.html')
+			<!-- Swiper -->
+			@@include('blocks/swiper-etnomofagi.html')
+
+			<!-- Slider content -->
+			<!-- <div class="header__slide none">@@include('blocks/slide-etnomofagi.html')</div> -->
+		</header>
+
+		<section>
+			@@include('blocks/section/services-etnomofagia.html')
+			@@include('blocks/section/pluse.html')
+			@@include('blocks/section/problem.html')
+			@@include('blocks/section/defence.html')
+			@@include('blocks/section/etap.html')
+			@@include('blocks/section/help.html')
+		</section>
+			@@include('blocks/footer.html')
+		<script src="./js/etnomofagi.bundle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'RFRufo';
+    src: url('/fonts/RFRufo-Thin.woff2') format('woff2'),
+    url('/fonts/RFRufo-Thin.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RFRufo';
+    src: url('/fonts/RFRufo-Regular.woff2') format('woff2'),
+    url('/fonts/RFRufo-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'RFRufo';
+    src: url('/fonts/RFRufo-Bold.woff2') format('woff2'),
+    url('/fonts/RFRufo-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+    --black: #151515;
+    --grey: #181818;
+    --green: #02E502;
+    --white: #fff;
+}
+
+body {
+	font-family: 'RFRufo';
+	background-color:var(--black);
+}
+
+h1{
+    color: var(--white);
+    font-family: 'RFRufo';
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+ 
+h2{
+    color: var(--white);
+    font-family: 'RFRufo';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ 
+h3{
+    color: var(--green);
+    font-family: 'RFRufo';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-weight: 400;
+}
+ 
+h4{
+    color: var(--white);
+    font-family: 'RFRufo';
+    font-size: 34px;
+    font-style: normal;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+h5{
+    color: var(--white);
+    font-family: 'RFRufo';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+h6{
+    color: var(--white);
+    font-family: 'RFRufo';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+ 
+p{
+    color: var(--white);;
+    font-family: 'RFRufo';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 172%;
+}
+
+section{
+    padding-top: 110px;
+}
+
+button{
+    background-color:var(--black);
+    font-size: 28px;
+    line-height: 100%;
+    font-family: 'RFRufo';
+    font-weight: 400;
+    color: var(--white);
+}
+  
+a,a:visited{
+    font-family: 'RFRufo';
+    text-decoration: none;
+}
+  
+a:hover{
+    text-decoration: none;
+    transition: 0.4s;
+}

@@ -1,0 +1,224 @@
+:root {
+	--radial-bg: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.2) 100%
+	);
+
+	--linear-bg: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.2) 0%,
+		rgba(255, 255, 255, 0) 99.99%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+@mixin background-size {
+	background-position: center center; /* x y */
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.slide__container{
+	margin: 0 auto;
+	width: 1320px;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 150px;
+}
+.slide {
+	height: 100vh;
+	overflow: hidden;
+	gap: 220px;
+	display: flex;
+	flex-direction: column;
+	background-position: center center; /* x y */
+	background-size: cover !important;
+	background-repeat: no-repeat;
+
+	&--austria {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/07.jpg');
+		@include background-size;
+	}
+
+	&--norway {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/06.jpg');
+
+		@include background-size;
+	}
+	color: #fff;
+
+	&::before {
+		content: '';
+	}
+
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+
+	@media (max-width: 1200px) {
+		padding-bottom: 60px;
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+}
+
+.slide {
+	height: 100vh;
+	overflow: hidden;
+	gap: 220px;
+	display: flex;
+	flex-direction: column;
+	background-position: center center; /* x y */
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	&--slide-01 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/07.jpg');
+		@include background-size;
+	}
+	&--slide-02 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/06.jpg');
+
+		@include background-size;
+	}
+	&--etnomofagia1 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/06.jpg');
+		@include background-size;
+	}
+	&--etnomofagia2 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/07.jpg');
+		@include background-size;
+	}
+	&--aboutus1 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/08.jpg');
+		@include background-size;
+	}
+	&--aboutus2 {
+		background: var(--radial-bg), var(--linear-bg),
+			url('./../img/slider-bg/07.jpg');
+		@include background-size;
+	}
+	color: #fff;
+
+	&::before {
+		content: '';
+	}
+
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+
+	@media (max-width: 1200px) {
+		padding-bottom: 60px;
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+}
+
+.slide__header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.slide__locations{
+	display: flex;
+	flex-direction: row;
+	gap: 45px;
+	.location--etnomofagi{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		.location__block{
+			display: flex;
+			flex-direction: row;
+			gap: 12px;
+			.location__text{
+				padding-bottom: 8px;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 222%;
+				color: var(--white);
+			}
+		}
+	}
+}
+
+.slide__tagline {
+	position: absolute;
+	top: -8px;
+	width: 100%;
+
+	// font-size: 30px;
+	font-size: 1.56vw;
+	font-weight: 500;
+	line-height: 1.23;
+	letter-spacing: 0.55em;
+	color: rgba(255, 255, 255, 0.7);
+
+	@media (max-width: 767px) {
+		font-size: 3vw;
+	}
+}
+
+@mixin background($color) {
+	background: linear-gradient(
+			47.06deg,
+			$color -3.87%,
+			rgba(255, 255, 255, 0) 20.89%
+		),
+		#ffffff;
+}
+
+.slide__title {
+	display: inline-block;
+	font-family: 'RFRufo';
+	font-weight: 400;
+	font-size: 72px;
+	color: #fff;
+
+	@media (max-width: 767px) {
+		font-size: 19vw;
+	}
+
+	&--norway  {
+		@include background(#051d27);
+	}
+
+	&--austria {
+		@include background(#122127 );
+	}
+}
+
+.slide__locations {
+	display: flex;
+	column-gap: 55px;
+	.location{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	@media (max-width: 1023px) {
+	}
+
+	@media (max-width: 767px) {
+	}
+}

@@ -1,0 +1,42 @@
+.location {
+	display: flex;
+	gap: 16px;
+	position: relative;
+	display: block;
+
+	@media (max-width: 1400px) {
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover::before {
+		opacity: 0.8;
+		filter: blur(10px);
+	}
+}
+
+.location__title {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 100%;
+	color: #fff;
+	margin-bottom: 4px;
+
+	@media (max-width: 1400px) {
+		
+	}
+}
+
+.location__link {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 100%;
+	color: #fff;
+}

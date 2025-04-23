@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+
+		<header class="header">
+			<!-- Header content -->
+			@@include('blocks/header__content.html')
+			@@include('blocks/mobile-nav.html')
+			<!-- Swiper -->
+			@@include('blocks/swiper-aboutus.html')
+
+			<!-- Slider content -->
+			<div class="header__slide none">@@include('blocks/slide.html')</div>
+		</header>
+
+		<section>
+			@@include('blocks/section/about-aboutus.html')
+			@@include('blocks/section/command.html')
+			@@include('blocks/section/work.html')
+			@@include('blocks/section/help.html')
+		</section>
+		@@include('blocks/footer.html')
+		<script src="./js/aboutus.bundle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+/* Начало четвёртой секции*/
+.about{
+    .__text{
+        span{
+            opacity: 0.4;
+        }
+    }
+    .__images{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+/* Конец четвёртой секции*/

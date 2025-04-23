@@ -1,0 +1,95 @@
+.help {
+    display: flex;  /* Добавлено для центрирования */
+    justify-content: center;  /* Центрирование по горизонтали */
+    align-items: center;  /* Центрирование по вертикали */  
+    .__write {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;     
+        .__box {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .__text{
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -320px;
+                    right: -170px;
+                    width: 525px;
+                    height: 351px;
+                    background-image: url(/img/image_Drone2.png);
+                    background-repeat: no-repeat;
+                    z-index: 100;
+                }
+                h4{
+                    font-size: 24px;
+                }
+            }
+            .__form {
+                display: flex;
+                flex-direction: row;
+                gap: 70px;
+                .__label {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 42px;
+                    .__label-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 11px;
+                        .__input {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 100%;
+                            color: var(--white);
+                            padding-left: 11px;
+                        }
+                    }
+                }
+                .__button {
+                    border: 1px solid var(--green);
+                    padding: 12px 53px 18px 53px;
+                    margin-top: -30px;
+                    a {
+                        font-weight: 400;
+                        font-size: 28px;
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+        .__politic {
+            padding-left: 5px;
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--white);
+            a {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -426px;
+                    right: -1355px;
+                    width: 1600px;
+                    height: 520px;
+                    background-image: url(/img/плашка.svg);
+                    background-repeat: no-repeat;
+                    z-index: -1;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -466px;
+                    right: -867px;
+                    width: 655px;
+                    height: 538px;
+                    background-image: url(/img/Parala3.svg);
+                    background-repeat: no-repeat;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}

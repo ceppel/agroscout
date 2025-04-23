@@ -1,0 +1,18 @@
+Урок по Gulp сборке
+https://youtu.be/D_HW-tvyKKE
+
+:::::::::::::::::::::::::::::::::::::::::::
+
+Swiper > Get started
+https://swiperjs.com/get-started
+
+Swiper > Demos
+https://swiperjs.com/demos#parallax
+
+Swiper > API
+https://swiperjs.com/swiper-api#parallax
+
+:::::::::::::::::::::::::::::::::::::::::::
+
+CSS preloaders
+https://cssloaders.github.io/
