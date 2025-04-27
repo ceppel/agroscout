@@ -18,7 +18,7 @@
           left: -25px;
           width: 116px;
           height: 116px;
-          background-image: url(/img/corner1.svg);
+          background-image: url(../img/corner1.svg);
           background-size: cover;
         }
         &::after {
@@ -28,7 +28,7 @@
           right: 25px;
           width: 116px;
           height: 116px;
-          background-image: url(/img/corner2.svg);
+          background-image: url(../img/corner2.svg);
           background-size: cover;
         }
         img {
@@ -53,7 +53,7 @@
                 left: 0;
                 width: 88px;
                 height: 1px;
-                background-image:url(/img/Line2.svg);
+                background-image:url(../img/Line2.svg);
             }
         }
         &:last-child {
