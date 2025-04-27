@@ -12,7 +12,7 @@
             left: -308px;
             width: 602px;
             height: 118px;
-            background-image:url(/img/iconDrone_flying.svg);
+            background-image:url(../img/iconDrone_flying.svg);
         }
         &::after{
             content: "";
@@ -21,7 +21,7 @@
             height: 583px;
             top: -278px;
             right: -99px;
-            background-image: url(/img/iconLine.svg);
+            background-image: url(../img/iconLine.svg);
         }
         .__left{
             display: flex;
