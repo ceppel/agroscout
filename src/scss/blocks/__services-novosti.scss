@@ -33,7 +33,7 @@
                         height: 117px;
                         bottom: -19px;
                         left: -17px;
-                        background-image: url(/img/corner1.svg);
+                        background-image: url(../img/corner1.svg);
                         background-repeat: no-repeat;
                     }
                     &::after {
@@ -44,7 +44,7 @@
                         top: -17px;
                         right: -23px;
                         background-repeat: no-repeat;
-                        background-image: url(/img/corner2.svg);
+                        background-image: url(../img/corner2.svg);
                     }
                 }
                 .__right {
@@ -62,7 +62,7 @@
                         height: 1px;
                         bottom: 18px;
                         left: 0;
-                        background-image: url(/img/novosti/Line.svg);
+                        background-image: url(../img/novosti/Line.svg);
                     }
                     .__top {
                         display: flex;
